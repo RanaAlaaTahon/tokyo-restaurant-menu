@@ -10,161 +10,994 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokyo Sushi</title>
+    <!-- Style link -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- Header starts -->
     <header class="header">
-
         <div class="logo">
             <img src="logo/logo.png" alt="logo" />
         </div>
 
         <nav class="navigation">
-            <a href="">HOME</a>
-            <a href="">MENU</a>
-            <a href="">RESERVATION</a>
+            <a href="#home">HOME</a>
+            <a href="#menu">MENU</a>
+            <a href="#reservation">RESERVATION</a>
+            <a href="#contact">CONTACT</a>
         </nav>
-
     </header>
-
+    <!-- Header ends -->
 
     <section class="main">
-
         <div>
             <h2 class="slogan">Fuel for Your Inner Samurai</h2>
             <a href="" class="click-and-collect">Click and collect</a>
         </div>
-
     </section>
 
+    <!-- Menu section starts -->
+    <section class="menu-section" id="menu">
+        <!-- Menu navigation starts -->
+        <div class="menu-nav-bar">
+            <div class="full_menu">
+                <h2>MENU</h2>
+            </div>
+            <div class="menu-nav">
+                <a href="#appetizers" class="menu-navigation">Appetizers</a>
+                <a href="#salads" class="menu-navigation">Salads</a>
+                <a href="#gunkan" class="menu-navigation">Gunkan</a>
+                <a href="#sashimi" class="menu-navigation">Sashimi</a>
+                <a href="#nigiri" class="menu-navigation">Nigiri</a>
+                <a href="#hosomaki" class="menu-navigation">Hosomaki</a>
+                <a href="#uramaki" class="menu-navigation">Uramaki</a>
+                <a href="#special_uramaki" class="menu-navigation">Special Uramaki</a>
+                <a href="#temaki" class="menu-navigation">Temaki</a>
+            </div>
+        </div>
+        <!-- Menu navigation ends -->
 
-    <section class="menu-selections" id="menu">
-        <h2 class="full_menu">
-            MENU
-        </h2>
+        <!-- Menu divisions starts -->
+        <div class="menu-divisions">
+            <div class="appetizers">
+                <h3>Appetizers</h3>
+                <div class="content">
+                    <div class="dish" id="appetizers">
+                        <div class="dish-img">
+                            <img src="menu-photos\appetizers\Calamri_bites.jpg" />
+                        </div>
+                        <div class="dish-info">
+                            <h4>Calamari Bites</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna
+                                aliqua.</p>
+                            <h5>7$</h5>
+                            <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
 
-        <div class="section-title">
-            <h3>
-                Appetizer
-            </h3>
+                    <div class="dish">
+                        <div class="dish-img">
+                            <img src="menu-photos\appetizers\mixed_sashimi.jpg" />
+                        </div>
+                        <div class="dish-info">
+                            <h4>Assorted Sashimi Platter</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna
+                                aliqua.</p>
+                            <h5>15$</h5>
+                            <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="dish">
+                        <div class="dish-img">
+                            <img src="menu-photos/appetizers/Shrimp_bonbon.jpg" />
+                        </div>
+                        <div class="dish-info">
+                            <h4>Shrimp Bonbon</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna
+                                aliqua.</p>
+                            <h5>7$</h5>
+                            <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="dish">
+                        <div class="dish-img">
+                            <img src="menu-photos/appetizers/Shrimp_tempura.jpg" />
+                        </div>
+                        <div class="dish-info">
+                            <h4>Shrimp Tempura</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna
+                                aliqua.</p>
+                            <h5>8$</h5>
+                            <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="dish">
+                        <div class="dish-img">
+                            <img src="menu-photos/appetizers/Spring_rolls.jpg" />
+                        </div>
+                        <div class="dish-info">
+                            <h4>Spring Rolls</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna
+                                aliqua.</p>
+                            <h5>6$</h5>
+                            <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="dish">
+                        <div class="dish-img">
+                            <img src="menu-photos/appetizers/Vegtables_tempura.jpg" />
+                        </div>
+                        <div class="dish-info">
+                            <h4>Vegetables Tempura</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna
+                                aliqua.</p>
+                            <h5>7$</h5>
+                            <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="section-title" id="menu">
+        <div class="salads" id="salads">
+            <h3>Salads</h3>
             <div class="content">
                 <div class="dish">
                     <div class="dish-img">
-                        <img src="menu-photos\appetizers\Calamri_bites.jfif" />
+                        <img src="menu-photos/salads/Salmon_avocado_salad.jpg" />
                     </div>
                     <div class="dish-info">
-                        <h4>
-                            Calamari Bites
-                        </h4>
+                        <h4>Salmon Avocado Salad</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>12$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/salads/Salmon_cashew_salad.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Salmon Cashew Salad</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>13$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/salads/Shrimp_octopus_salad.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Shrimp Octopus Salad</h4>
                         <p>
-                            Fried marinated Calamari served with sweet chili sauce
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
                         </p>
-                        <h5>
-                            7$
-                        </h5>
-                        <button class="add_to_basket">
-                            Add to basket
-                        </button>
+                        <h5>12$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/salads/Spicy_crab_salad.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Spicy Crab Salad</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>11$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/salads/Yasai_salad.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Yasai Salad</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>13$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="section-title" id="menu">
+        <div class="gunkan" id="gunkan">
+            <h3>Gunkan</h3>
             <div class="content">
                 <div class="dish">
                     <div class="dish-img">
-                        <img src="menu-photos\appetizers\mixed_sashimi.jfif" />
+                        <img src="menu-photos/gunkan/Salmon_and_shrimp_with_chesee_gunkan.jpg" />
                     </div>
                     <div class="dish-info">
-                        <h4>Assorted Sashimi Platter</h4>
-                        <p>Salmon , shrimp ,calamari ,octopus, crab , avocado and caviar served with soy sauce </p>
-                        <h5>15$</h5>
-                        <button class="add_to_basket">Add to basket</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="dish">
-                    <div class="dish-img">
-                        <img src="menu-photos/appetizers/Shrimp_bonbon.jfif" />
-                    </div>
-                    <div class="dish-info">
-                        <h4>Shrimp Bonbon</h4>
-                        <p>Shrimp with Mozzarella cheese and cooking cream wrapped with spring rolls served with sweet
-                            chili</p>
-                        <h5>7$</h5>
-                        <button class="add_to_basket">Add to basket</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="dish">
-                    <div class="dish-img">
-                        <img src="menu-photos/appetizers/Shrimp_tempura.jfif" />
-                    </div>
-                    <div class="dish-info">
-                        <h4>Shrimp Tempura</h4>
-                        <p>Fried shrimp served with sweet chili sauce</p>
+                        <h4>Salmon (with Shrimp & Cheese)</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
                         <h5>8$</h5>
-                        <button class="add_to_basket">Add to basket</button>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/gunkan/salmon_gunkan.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Salmon (with Cheese)</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>8$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/gunkan/Tuna_with_cheese_gunkan.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Tuna (with Cheese)</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>8$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="section-title" id="menu">
+        <div class="sashimi" id="sashimi">
+            <h3>Sashimi</h3>
             <div class="content">
                 <div class="dish">
                     <div class="dish-img">
-                        <img src="menu-photos/appetizers/Spring_rolls.jfif" />
+                        <img src="menu-photos/sashimi/Calamari_sashimi.jpg" />
                     </div>
                     <div class="dish-info">
-                        <h4>Spring Rolls</h4>
-                        <p>Vegetables spring rolls served with sweet chilli sauce</p>
+                        <h4>Calamari Sashimi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>12$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/sashimi/mix_sashimi.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Mix Sashimi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/sashimi/Octopus_sashimi.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Octopus Sashimi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/sashimi/Salmon_sashimi.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Salmon Sashimi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/sashimi/Tuna_sashimi.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Tuna Sashimi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/sashimi/White_fish_sashimi.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>White Fish Sashimi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-title" id="menu">
+        <div class="nigiri" id="nigiri">
+            <h3>Nigiri</h3>
+            <div class="content">
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/carb.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Crab Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
                         <h5>6$</h5>
-                        <button class="add_to_basket">Add to basket</button>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/eil.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Eel Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>7$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/salmon.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Salmon Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>7$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/shrimp.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Shrimp Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>8$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/tuna.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Tuna Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>8$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/octopus.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Octopus Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>7$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/shrimp_tempura.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Shrimp Tempura Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>7$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/nigiri/Squid_tempura.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Squid Tempura Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>6$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="section-title" id="menu">
+        <div class="hosomaki" id="hosomaki">
+            <h3>Hosomaki</h3>
             <div class="content">
                 <div class="dish">
                     <div class="dish-img">
-                        <img src="menu-photos/appetizers/Vegtables_tempura.jfif" />
+                        <img src="menu-photos/hoso_maki/foto_maki.jpg" />
                     </div>
                     <div class="dish-info">
-                        <h4>Vegetables Tempura</h4>
-                        <p>Fried vegetables served with sweet chili sauce</p>
-                        <h5>7$</h5>
-                        <button class="add_to_basket">Add to basket</button>
+                        <h4>Futo Maki</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>12$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/hoso_maki/hoso_crab.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Hoso Crab</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/hoso_maki/hoso_eil.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Hoso Eel</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/hoso_maki/hoso_salmon.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Hoso Salmon</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/hoso_maki/hoso_shrimp.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Hoso Shrimp</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/hoso_maki/Tuna_Maki.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Hoso Tuna</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>10$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="section-title" id="menu">
+        <div class="uramaki" id="uramaki">
+            <h3>Uramaki</h3>
+            <div class="content">
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/ura_maki/Ura_California__1080x_auto_none.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Ura California</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/ura_maki/Ura_crab.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Ura Crab</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/ura_maki/Ura_salmon__1080x_auto_none.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Ura Salmon</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/ura_maki/Ura_shrimp.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Ura Shrimp</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="section-title" id="menu">
+        <div class="special_uramaki" id="special_uramaki">
+            <h3>Special Uramaki</h3>
+            <div class="content">
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/argola_smoked_salmon.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Argolla Smoked Salmon</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>17$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/asparagus_red_dragon.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Asparagus Red Dragon</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>17$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/crispy_tri_g.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Crispy Tri G</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>20$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/dragon.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Dragon</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>20$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/mangoo_tango.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Mango Tango Roll</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>22$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
 
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/Philadelphia.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Philadelphia</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>20$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/pink_g.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Pinky G Roll</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>21$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/Rainbow_roll__1080x_auto_none.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Rainbow Roll</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>23$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/salmon_dynamite.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Salmon Dynamite</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>20$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/spicy_tuna_roll_1080x_auto_none.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Spicy Tuna Roll</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>18$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/texico.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Texico Roll</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>20$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/special_ura_maki/tokyo.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Tokyo Roll</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>22$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-title" id="menu">
+        <div class="temaki" id="temaki">
+            <h3>Temaki</h3>
+            <div class="content">
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/temaki/Eel.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Eel Temaki</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/temaki/mix.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Mix Temaki</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/temaki/Red_caviar__1080x_auto_none.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Red Caviar Temaki</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. </p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/temaki/Salmon.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Salmon Temaki</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/temaki/Shrimp.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Shrimp Temaki</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.
+                        </p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-img">
+                        <img src="menu-photos/temaki/Tuna.jpg" />
+                    </div>
+                    <div class="dish-info">
+                        <h4>Tuna Temaki</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua.</p>
+                        <h5>15$</h5>
+                        <button class="add_to_basket"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
-
+        <!-- Menu divisions ends -->
     </section>
+    <!-- Menu section ends -->
 
+    <!-- Contact starts -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div>
+                        <h3>ADDRESS</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>N Teseen st, New Cairo, Cairo, Egypt</p>
+                        <p><i class="fa-solid fa-phone"></i> 123456789 </p>
+                        <p><i class="fa-solid fa-envelope"></i>support@tokyorestaurant.com </p>
+                    </div>
+                    <div>
+                        <h3>WORKING HOURS</h3>
+                        <p>12:00pm to 4:00pm</p>
+                        <p>5:00pm to 12:00 am</p>
+                    </div>
+                    <div>
+                        <h3>FOLLOW US</h3>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
 
-
-
-
-
-
-
+                <div class="contact-form">
+                    <h4>CONTACT US</h4>
+                    <form class="contact" action="" method="post">
+                        <input type="text" name="Name" id="Name" placeholder="Full Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
+                        <textarea name="Message" rows="5" placeholder="Yor Message" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Contact ends -->
 
 
     <footer>
@@ -173,17 +1006,3 @@
 </body>
 
 </html>
-
-<!-- <div class="content">
-                <div class="dish">
-                    <div class="dish-img">
-                        <img src="menu-photos\appetizers\Calamri_bites.jfif" />
-                    </div>
-                    <div class="dish-info">
-                        <h4>Calamari bites</h4>
-                        <p>Fried marinated Calamari with sweet chili</p>
-                        <h5>price</h5>
-                        <button class="add_to_basket">Add to basket</button>
-                    </div>
-                </div>
-            </div> -->
