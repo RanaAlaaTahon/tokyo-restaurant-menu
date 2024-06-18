@@ -114,6 +114,8 @@
     border: #F56438;
     border-width: 1px;
     border-style: solid;
+    background: #F7FFEB;
+    padding-left: 5px;
 }
 
 .contact-form textarea {
@@ -123,6 +125,8 @@
     border: #F56438;
     border-width: 1px;
     border-style: solid;
+    background: #F7FFEB;
+    padding-left: 5px;
 }
 
 /* Contact ends*/
